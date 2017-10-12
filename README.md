@@ -12,3 +12,12 @@ what you're not currently using!
 
 Trust me: I know you're used to one big file...this is no good
 reason to waste your time!!!
+
+Warning: to compile the file, when using include or input you
+only need to compile the original file, in this case:
+template_article.tex
+
+Also notice that, since these files are inside a git project, to
+rename them use something like:
+git mv template_article.tex my_best_article.tex
+
