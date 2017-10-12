@@ -1,0 +1,39 @@
+\documentclass[a4paper]{article}
+%Maybe you don't want all the packages used here
+%Or maybe you have other preferences
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[	english]{babel}
+\usepackage{titletoc}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts}
+\usepackage{color}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{standalone}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+%This is a very basic example to show the difference between
+%include and input
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \includegraphics[width=5cm,height=3.5cm]{Images/logo.jpg} \par\vspace{1cm}
+    {\centering
+    \LARGE Article Template\par
+    Copy Me and Use Git\par
+    }
+    \vspace{1.5cm}
+    {Today: \large \today\par}
+\end{titlepage}
+
+\tableofcontents
+
+\input{Sections/intro}
+\include{Sections/other}
+
+\end{document}
